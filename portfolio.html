@@ -55,74 +55,120 @@
 
   <main>
     <!-- Hero -->
-    <h1 hidden>Навигатор по проектах</h1>
-    <section>
-      <ul class="project-nav list">
-        <li><button class="nav-btn" type="button">Все</button></li>
-        <li><button class="nav-btn" type="button">Веб-сайты</button></li>
-        <li><button class="nav-btn" type="button">Приложения</button></li>
-        <li><button class="nav-btn" type="button">Дизайн</button></li>
-        <li><button class="nav-btn" type="button">Маркетинг</button></li>
-      </ul>
+    <section class="filters">
+
+      <div class="container">
+        
+          <h1 hidden>Навигатор по проектах</h1> 
+
+          <ul class="filter-nav list">
+            <li class="filter-btn"><button class="nav-btn" type="button">Все</button></li>
+            <li class="filter-btn"><button class="nav-btn" type="button">Веб-сайты</button></li>
+            <li class="filter-btn"><button class="nav-btn" type="button">Приложения</button></li>
+            <li class="filter-btn"><button class="nav-btn" type="button">Дизайн</button></li>
+            <li class="filter-btn"><button class="nav-btn" type="button">Маркетинг</button></li>
+          </ul>
   
-      <!-- Projects -->
-      <h2 hidden>Наши проекты</h2>
-      <ul class="projects"> 
-        <li class="project-list list">
-          <a class="project-link link" href=""><img src="images/portfolio/box-1.jpg" alt="на экране монитора ноутбука трое специалистов компании" width="370" height="294">
-          <h3 class="project-name">Технокряк</h3>
-          <p class="project-cat">Веб-сайт</p></a>
-        </li>
-        <li class="project-list list">
-          <a class="project-link link" href=""><img src="images/portfolio/box-2.jpg" alt="двое играков играют в баскетбол" width="370" height="294">
-          <h3 class="project-name">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-          <p class="project-cat">Дизайн</p></a>
-        </li>
-        <li class="project-list list">
-          <a class="project-link link" href=""><img src="images/portfolio/box-3.jpg" alt="лейбл ресторана" width="370" height="294">
-          <h3 class="project-name">Ресторан <span lang="en">Seafood</span></h3>
-          <p class="project-item">Приложение</p></a>
-        </li>
-        <li class="project-list list">
-          <a class="project-link link" href=""><img src="images/portfolio/box-4.jpg" alt="черные накладные наушники" width="370" height="294">
-          <h3 class="project-name">Проект <span lang="en">Prime</span></h3>
-          <p class="project-cat">Маркетинг</p></a>
-        </li>
-        <li class="project-list list">
-          <a class="project-link link" href=""><img src="images/portfolio/box-5.jpg" alt="2 коробки белого и бежевого цвета" width="370" height="294">
-          <h3 class="project-name">Проект <span lang="en">Boxes</span></h3>
-          <p class="project-cat">Приложение</p></a>
-        </li>
-        <li class="project-list list">
-          <a class="project-link link" href=""><img src="images/portfolio/box-6.jpg" alt="монитор компьютера" width="370" height="294">
-          <h3 class="project-name" lang="en">Inspiration has no Borders</h3>
-          <p class="project-cat">Веб-сайт</p></a>
-        </li>
-        <li class="project-list list">
-          <a class="project-link link" href=""><img src="images/portfolio/box-7.jpg" alt="раскрытый журнал" width="370" height="294">
-          <h3 class="project-name">Издание <span lang="en">Limited Edition</span></h3>
-          <p class="project-cat">Дизайн</p></a>
-        </li>
-        <li class="project-list list">
-          <a class="project-link link" href=""><img src="images/portfolio/box-8.jpg" alt="ярлык" width="370" height="294">
-          <h3 class="project-name">Проект <span lang="en">LAB</span></h3>
-          <p class="project-cat">Маркетинг</p></a>
-        </li>
-        <li class="project-list list">
-          <a class="project-link link" href=""><img src="images/portfolio/box-9.jpg" alt="клиент работает за ноутбуком" width="370" height="294">
-          <h3 class="project-name" lang="en">Growing Business</h3>
-          <p class="project-cat">Приложение</p></a>
-        </li>
-      </ul>
-      <!-- <a class="project-item list link" href=""><img src="images/portfolio/box-9.jpg" alt="sdsdsd">
-      <h3>dksfhskdfjhskd</h3>
-      <p>fpplication</p>
-      </a> -->
+          <!-- Projects -->
+          <h2 hidden>Наши проекты</h2>
+          <ul class="projects">
+            <li class="project-list list">
+              <a class="project-link link" href=""><img src="images/portfolio/box-1.jpg"
+                  alt="на экране монитора ноутбука трое специалистов компании" width="370" height="294">
+                <div class="project-list-content">
+                  <h3 class="project-name">Технокряк</h3>
+                  <p class="project-cat">Веб-сайт</p>
+                </div>  
+                </a>
+            </li>
+
+            <li class="project-list list">
+              <a class="project-link link" href=""><img src="images/portfolio/box-2.jpg"
+                  alt="двое играков играют в баскетбол" width="370" height="294">
+                <div class="project-list-content">
+                  <h3 class="project-name">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                  <p class="project-cat">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list list">
+              <a class="project-link link" href=""><img src="images/portfolio/box-3.jpg" 
+                  alt="лейбл ресторана" width="370" height="294">
+                <div class="project-list-content">
+                  <h3 class="project-name">Ресторан<span lang="en"></span>Seafood</span></h3>
+                  <p class="project-cat">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list list">
+              <a class="project-link link" href=""><img src="images/portfolio/box-4.jpg"
+                  alt="черные накладные наушники" width="370" height="294">
+                <div class="project-list-content">
+                  <h3 class="project-name">Проект <span lang="en">Prime</span></h3>
+                  <p class="project-cat">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list list">
+              <a class="project-link link" href=""><img src="images/portfolio/box-5.jpg"
+                  alt="2 коробки белого и бежевого цвета" width="370" height="294">
+                <div class="project-list-content">
+                  <h3 class="project-name">Проект <span lang="en">Boxes</span></h3>
+                  <p class="project-cat">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list list">
+              <a class="project-link link" href=""><img src="images/portfolio/box-6.jpg"
+                  alt="монитор компьютера" width="370" height="294">
+                <div class="project-list-content">
+                  <h3 class="project-name" lang="en">Inspiration has no Borders</h3>
+                  <p class="project-cat">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list list">
+              <a class="project-link link" href=""><img src="images/portfolio/box-7.jpg"
+                  alt="раскрытый журнал" width="370" height="294">
+                <div class="project-list-content">
+                  <h3 class="project-name">Издание <span lang="en">Limited Edition</span></h3>
+                  <p class="project-cat">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list list">
+              <a class="project-link link" href=""><img src="images/portfolio/box-8.jpg" 
+                alt="ярлык" width="370" height="294">
+                <div class="project-list-content">
+                  <h3 class="project-name">Проект <span lang="en">LAB</span></h3>
+                  <p class="project-cat">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-list list">
+              <a class="project-link link" href=""><img src="images/portfolio/box-9.jpg"
+                  alt="клиент работает за ноутбуком" width="370" height="294">
+                <div class="project-list-content">
+                  <h3 class="project-name" lang="en">Growing Business</h3>
+                  <p class="project-cat">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+      </div>
     </section>
   </main>
 
   <!-- Footer -->
-<footer class="footer-info">
+  <footer class="footer-info">
   <div class="container">
     <address class="address">
       <a lang="en" href="./index.html"
