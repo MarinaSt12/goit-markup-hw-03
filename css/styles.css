@@ -10,16 +10,8 @@
   --text-color-transparent: rgba(255, 255, 255, 0.6);
   --background-color-dark: #2f303a;
   --background-color-light: #f5f4fa;
-}
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
+  --section-pt: 94px;
+  --section-pb: 94px;
 }
 
 body {
@@ -32,7 +24,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 
@@ -55,19 +48,20 @@ img {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 /* ++++++++++++ STUDIO ++++++++++++ */
 
 /* ============ COMPONENTS ============ */
-.section-title {
-  color: var(--text-color-darkgrey);
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 .logo {
   margin-right: 93px;
   color: var(--accent-color);
@@ -78,10 +72,35 @@ img {
   line-height: 1.19em;
   letter-spacing: 0.03em;
 }
+.section-title {
+  margin-bottom: 50px;
+  color: var(--text-color-darkgrey);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 
 /* ============ HEADER ============ */
 .header {
-  outline: 2px solid rgb(255, 81, 0);
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  /* background-color: #ccc; */
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ECECEC;
+  justify-content: space-between;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .navigation {
@@ -91,10 +110,11 @@ img {
 
 .navigation-list {
   display: flex;
+  align-items: center;
 }
 
 .navigation-item {
-  outline: 2px solid rgb(255, 81, 0);
+  /* background-color: indianred; */
 }
 
 .navigation-item:not(:last-child) {
@@ -125,17 +145,32 @@ img {
 
 .contacts-list {
   display: flex;
+  align-items: center;
 }
 
 .contacts-item {
-  outline: 2px solid rgb(255, 81, 0);
+  /* background-color: lightcoral; */
 }
 
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contacts-link {
+.contacts-email {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /* margin-left: auto; */
+
+  color: var(--text-color-grey);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts-tel {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -147,12 +182,14 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-/* .contacts-link .email {
-  margin-left: auto;
-} */
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts-email:hover,
+.contacts-email:focus {
+  color: var(--accent-color);
+}
+
+.contacts-tel:hover,
+.contacts-tel:focus {
   color: var(--accent-color);
 }
 
@@ -187,6 +224,7 @@ img {
 }
 
 .modal-btn {
+  padding: 10px 32px;
   color: var(--text-color-white);
   background-color: var(--accent-color);
 
@@ -198,7 +236,7 @@ img {
 
 
   position: absolute;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   left: 700px;
   top: 447px;
@@ -214,6 +252,15 @@ img {
 /* ============ END HERO ============ */
 
 /* ============ ADVANTAGES ============ */
+.advantages .container {
+  display: flex;
+  align-items: center;
+}
+
+.advantages-list {
+  display: flex;
+}
+
 .advantages-title {
   color: var(--text-color-darkgrey);
 
@@ -232,12 +279,20 @@ img {
 /* ============ END ADVANTAGES ============ */
 
 /* ============ SERVICES ============ */
-
+.services-list {
+  display: flex;
+}
 /* ============ END SERVICES ============ */
 
 /* ============ TEAM ============ */
 .team {
   background-color: var(--background-color-light);
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+}
+
+.team-list {
+  display: flex;
 }
 
 .specialist-name {
