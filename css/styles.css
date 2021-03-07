@@ -79,7 +79,6 @@ img {
   color: var(--accent-color);
 
   font-family: var(--secondary-font);
-  /* font-style: normal; */
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19em;
@@ -108,7 +107,7 @@ img {
 .navigation {
   display: flex;
   align-items: center;
-  /* font-style: normal; */
+  font-style: normal;
 }
 
 .navigation-list {
