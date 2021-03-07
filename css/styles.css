@@ -38,12 +38,10 @@ img {
   display: block;
 }
 
-/* маркеры */
 .list {
   list-style: none;
 }
 
-/* подчеркивание */
 .link {
   text-decoration: none;
 }
@@ -59,7 +57,6 @@ img {
   overflow: hidden;
 }
 
-/* ++++++++++++ STUDIO ++++++++++++ */
 
 /* ============ COMPONENTS ============ */
 
